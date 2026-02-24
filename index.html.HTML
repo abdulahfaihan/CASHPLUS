@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>[تخفيضات القيصومة] | [القيصومة]</title>
+  <meta name="description" content="[تخفيضات القيصومة] في [القيصومة]. تواصل عبر واتساب واعرف الموقع وساعات العمل." />
+
+  <!-- OG -->
+  <meta property="og:title" content="[تخفيضات القيصومة] | [القيصومة]" />
+  <meta property="og:description" content="[اول مركز تخفيضات بالقيصومة كل ماتحتاجه تحت سقف واحد]" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a30;
+      --text:#e9eefc;
+      --muted:#b8c2e0;
+      --line:rgba(255,255,255,.12);
+      --accent:#4f8cff;
+      --accent2:#22c55e;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial, sans-serif;
+      background: radial-gradient(1200px 700px at 80% -10%, rgba(79,140,255,.35), transparent 60%),
+                  radial-gradient(900px 500px at 0% 20%, rgba(34,197,94,.18), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.7;
+    }
+    a{color:inherit}
+    .wrap{max-width:980px;margin:0 auto;padding:22px}
+    .topbar{
+      display:flex; gap:12px; align-items:center; justify-content:space-between;
+      padding:10px 0 18px;
+    }
+    .brand{display:flex;gap:10px;align-items:center}
+    .logo{
+      width:44px;height:44px;border-radius:14px;
+      background: linear-gradient(135deg, rgba(79,140,255,.9), rgba(34,197,94,.8));
+      box-shadow: var(--shadow);
+    }
+    .brand h1{font-size:18px;margin:0}
+    .brand p{margin:0;color:var(--muted);font-size:13px}
+
+    .hero{
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border-radius: var(--radius);
+      padding:22px;
+      box-shadow: var(--shadow);
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:18px;
+      align-items:start;
+    }
+    @media (max-width: 820px){
+      .hero-grid{grid-template-columns:1fr}
+    }
+    .title{
+      font-size:28px;
+      margin:0 0 8px;
+      letter-spacing:.2px;
+    }
+    .subtitle{
+      margin:0 0 14px;
+      color:var(--muted);
+      font-size:15px;
+    }
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .badge{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      padding:8px 10px;
+      border-radius: 999px;
+      font-size:13px;
+      color: var(--muted);
+    }
+    .card{
+      border:1px solid var(--line);
+      background: rgba(15,26,48,.65);
+      border-radius: var(--radius);
+      padding:16px;
+    }
+    .card h3{margin:0 0 10px;font-size:15px;color:#dbe5ff}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    .item{
+      display:flex; gap:10px; align-items:flex-start;
+      padding:10px; border:1px solid var(--line);
+      border-radius: 14px; background: rgba(255,255,255,.04);
+      width:100%;
+    }
+    .k{min-width:88px;color:var(--muted);font-size:13px}
+    .v{font-size:14px}
+    .actions{
+      display:flex; gap:10px; flex-wrap:wrap;
+      margin-top:14px;
+    }
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      gap:8px;
+      padding:12px 14px;
+      border-radius: 14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      text-decoration:none;
+      font-weight:600;
+      font-size:14px;
+      transition: transform .06s ease, background .15s ease;
+    }
+    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.10)}
+    .btn.primary{
+      border-color: rgba(79,140,255,.5);
+      background: linear-gradient(135deg, rgba(79,140,255,.9), rgba(79,140,255,.55));
+    }
+    .btn.whatsapp{
+      border-color: rgba(34,197,94,.55);
+      background: linear-gradient(135deg, rgba(34,197,94,.95), rgba(34,197,94,.55));
+    }
+    .section{margin-top:18px}
+    .section h2{
+      margin:0 0 10px;
+      font-size:18px;
+    }
+    .grid2{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+    }
+    @media (max-width: 820px){
+      .grid2{grid-template-columns:1fr}
+    }
+    .gallery{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:10px;
+    }
+    @media (max-width: 820px){
+      .gallery{grid-template-columns: repeat(2, 1fr)}
+    }
+    .ph{
+      height:120px;
+      border-radius: 16px;
+      border:1px dashed rgba(255,255,255,.18);
+      background: rgba(255,255,255,.03);
+      display:flex;align-items:center;justify-content:center;
+      color:var(--muted);
+      font-size:13px;
+      text-align:center;
+      padding:10px;
+    }
+    iframe{
+      width:100%;
+      height:320px;
+      border:0;
+      border-radius: 16px;
+      overflow:hidden;
+    }
+    .footer{
+      margin:18px 0 8px;
+      color: var(--muted);
+      font-size:12px;
+      display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;
+    }
+    .note{
+      border:1px solid rgba(79,140,255,.25);
+      background: rgba(79,140,255,.08);
+      padding:10px 12px;
+      border-radius: 14px;
+      color:#dbe5ff;
+      font-size:13px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- Top -->
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>[تخفيضات القيصومة]</h1>
+          <p>[القيصومة] • [تخفيضات العائلة]</p>
+        </div>
+      </div>
+
+      <!-- يمكنك حذفها أو تعديلها -->
+      <div class="note">تجربة مجانية 3 أيام • تفعيل فوري</div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <h2 class="title">[تخفيضات القيصومة]</h2>
+          <p class="subtitle">[اول واكبر محل تخفيضات بالقيصومة]</p>
+
+          <div class="badges">
+            <span class="badge">📍 [القيصومة حفر الباطن]</span>
+            <span class="badge">🕒 [يوميا من 8 ص -12 ليلا]</span>
+            <span class="badge">⭐ خدمة سريعة</span>
+          </div>
+
+          <div class="actions">
+            <!-- واتساب: ضع رقمك بصيغة دولية بدون + (966530864366) -->
+            <a class="btn whatsapp" href="https://wa.me/[9665xxxxxxxx]?text=%D9%87%D9%84%D9%88%20%D8%A7%D8%A8%D8%BA%D9%89%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85" target="_blank" rel="noopener">
+              واتساب الآن
+            </a>
+
+            <!-- اتصال -->
+            <a class="btn primary" href="tel:[0530864366]">اتصال مباشر</a>
+
+            <!-- خرائط: ضع رابط Google Maps -->
+            <a class="btn" href="[https://maps.app.goo.gl/XbhMBWLie31TA4zW6]" target="_blank" rel="noopener">فتح الموقع على الخريطة</a>
+          </div>
+        </div>
+
+        <aside class="card">
+          <h3>معلومات سريعة</h3>
+
+          <div class="item">
+            <div class="k">القيصومة</div>
+            <div class="v">[CHMB7530، 7530 الرابع 122، 3828، القيصومة 39552]</div>
+          </div>
+
+          <div class="item" style="margin-top:10px">
+            <div class="k">ساعات العمل</div>
+            <div class="v">[يوميًا 8ص–12م]</div>
+          </div>
+
+          <div class="item" style="margin-top:10px">
+            <div class="k">الخدمات</div>
+            <div class="v">[تمارا] • [تابي] • [توصيل]</div>
+          </div>
+
+          <div class="item" style="margin-top:10px">
+            <div class="k">التواصل</div>
+            <div class="v">[0530864366]</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Sections -->
+    <section class="section">
+      <h2>الخدمات</h2>
+      <div class="grid2">
+        <div class="card">
+          <h3>[تمارا]</h3>
+          <p style="margin:0;color:var(--muted);font-size:14px">[نقدم خدمه التقسيط]</p>
+        </div>
+        <div class="card">
+          <h3>[تابي]</h3>
+          <p style="margin:0;color:var(--muted);font-size:14px">[نقدم خدمه التقسيط]</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>صور</h2>
+      <div class="gallery">
+        <!-- استبدل Placeholders بصورك -->
+        <div class="ph">https://d2020.net/details/882095<br/>JPG / PNG</div>
+        <div class="ph">ضع صورة هنا<br/>من المحل / المنتجات</div>
+        <div class="ph">ضع صورة هنا<br/>قبل/بعد إن وجدت</div>
+      </div>
+      <p style="margin:10px 0 0;color:var(--muted);font-size:13px">
+        تقدر ترسل الصور واتساب ونضيفها لك، أو ترفعها بنفسك إذا عندك وصول للملف.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>الموقع</h2>
+      <!-- ضع رابط تضمين الخريطة (Google Maps Embed) -->
+      <div class="card" style="padding:12px">
+        <iframe
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="[رابط Google Maps Embed هنا]">
+        </iframe>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>جاهز للتواصل؟</h2>
+      <div class="card">
+        <p style="margin:0 0 12px;color:var(--muted);font-size:14px">
+          اكتب لنا على واتساب وسنرد عليك بسرعة.
+        </p>
+        <div class="actions">
+          <a class="btn whatsapp" href="https://wa.me/[9665xxxxxxxx]?text=%D9%87%D9%84%D9%88%20%D8%A7%D8%A8%D8%BA%D9%89%20%D8%AD%D8%AC%D8%B2%20%D8%A3%D9%88%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1" target="_blank" rel="noopener">تواصل واتساب</a>
+          <a class="btn" href="tel:[05xxxxxxxx]">اتصال</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div>© [اسم النشاط] — [السنة]</div>
+      <div>تم إعداد الصفحة بواسطة CashPlus</div>
+    </div>
+  </div>
+
+  <!-- بيانات منظمة (Schema.org) لتحسين الظهور - عدّل القيم -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "[اسم النشاط]",
+    "description": "[وصف مختصر للنشاط]",
+    "telephone": "[05xxxxxxxx]",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "[المدينة]",
+      "streetAddress": "[العنوان]"
+    },
+    "openingHours": "[مثال: Sa-Th 08:00-23:00]",
+    "url": "[رابط الصفحة]"
+  }
+  </script>
+</body>
+</html>
