@@ -15,6 +15,7 @@
       --wa:#22c55e;
       --call:#2563eb;
       --map:#0ea5e9;
+      --card:#f8fafc;
       --radius:18px;
     }
 
@@ -27,49 +28,34 @@
     }
 
     /* ====== HEADER ====== */
-    header{
-      padding:12px 16px 6px;
-      text-align:center;
-    }
-    header h1{
-      margin:0;
-      font-size:18px;
-      font-weight:800;
-    }
-    header p{
-      margin:4px 0 0;
-      font-size:13px;
-      color:var(--muted);
-    }
+    header{padding:12px 16px 6px;text-align:center}
+    header h1{margin:0;font-size:18px;font-weight:900}
+    header p{margin:4px 0 0;font-size:13px;color:var(--muted)}
 
     /* ====== SLIDER ====== */
     .slider{
       position:relative;
-      margin:12px 16px;
+      margin:12px 16px 10px;
       border-radius:var(--radius);
       overflow:hidden;
       height:240px;
+      background:#f3f4f6;
     }
-    .slides{
-      display:flex;
-      width:300%;
-      height:100%;
-      animation: slide 12s infinite;
-    }
+    .slides{display:flex;width:300%;height:100%;animation: slide 12s infinite}
     .slide{
       width:100%;
       flex-shrink:0;
       display:flex;
       align-items:center;
       justify-content:center;
-      font-size:20px;
-      font-weight:700;
+      font-size:22px;
+      font-weight:900;
       color:#fff;
+      letter-spacing:.2px;
     }
     .s1{background:linear-gradient(135deg,#2563eb,#22c55e)}
     .s2{background:linear-gradient(135deg,#f97316,#ef4444)}
     .s3{background:linear-gradient(135deg,#0ea5e9,#6366f1)}
-
     @keyframes slide{
       0%{transform:translateX(0)}
       30%{transform:translateX(0)}
@@ -85,13 +71,13 @@
       display:grid;
       grid-template-columns:1fr 1fr 1fr;
       gap:10px;
-      padding:12px 16px;
+      padding:10px 16px 8px;
     }
     .btn{
       text-decoration:none;
       padding:14px 10px;
       border-radius:14px;
-      font-weight:800;
+      font-weight:900;
       font-size:14px;
       text-align:center;
       color:#fff;
@@ -100,16 +86,80 @@
     .call{background:var(--call)}
     .map{background:var(--map)}
 
-    /* ====== INFO ====== */
+    /* ====== INFO (fill lower half) ====== */
     .info{
-      padding:8px 16px 20px;
-      font-size:13px;
-      color:var(--muted);
-      line-height:1.7;
+      padding:10px 16px 20px;
       text-align:center;
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.8;
     }
 
-    /* ====== DESKTOP LIMIT ====== */
+    .cards{
+      padding:0 16px 18px;
+      display:grid;
+      gap:12px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:12px;
+      text-align:right;
+    }
+    .card h3{
+      margin:0 0 8px;
+      font-size:14px;
+      color:var(--text);
+      font-weight:900;
+    }
+
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      border:1px solid var(--line);
+      background:#fff;
+      padding:10px 10px;
+      border-radius:999px;
+      font-size:13px;
+      font-weight:800;
+      color:var(--text);
+      white-space:nowrap;
+    }
+
+    .ico{
+      width:26px;height:26px;
+      border-radius:8px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:900;
+      font-size:12px;
+      flex:0 0 auto;
+    }
+    .visa{background:#1a56db}
+    .mada{background:#10b981}
+    .apple{background:#111827}
+    .tabby{background:#7c3aed}
+    .tamara{background:#f97316}
+    .jahez{background:#111827}
+    .hunger{background:#e11d48}
+    .keta{background:#0ea5e9}
+
+    .note{
+      margin-top:10px;
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    /* Desktop limit */
     @media (min-width:768px){
       body{max-width:420px;margin:auto;border-left:1px solid var(--line);border-right:1px solid var(--line)}
     }
@@ -134,16 +184,48 @@
 
   <!-- ACTION BUTTONS -->
   <section class="actions">
-    <a class="btn wa" href="https://wa.me/966500000000" target="_blank">واتساب</a>
+    <a class="btn wa" href="https://wa.me/966500000000" target="_blank" rel="noopener">واتساب</a>
     <a class="btn call" href="tel:0500000000">اتصال</a>
-    <a class="btn map" href="https://maps.google.com/?q=Al%20Qaysumah" target="_blank">الموقع</a>
+    <a class="btn map" href="https://maps.google.com/?q=Al%20Qaysumah" target="_blank" rel="noopener">الموقع</a>
   </section>
 
-  <!-- INFO -->
+  <!-- Basic info -->
   <section class="info">
-    مفتوح يوميًا من 8 صباحًا حتى 12 منتصف الليل  
-    <br>
+    مفتوح يوميًا من 8 صباحًا حتى 12 منتصف الليل<br>
     📍 الحي الرئيسي – القيصومة
+  </section>
+
+  <!-- Fill the lower half -->
+  <section class="cards">
+
+    <div class="card">
+      <h3>طرق الدفع</h3>
+      <div class="chips">
+        <span class="chip"><span class="ico visa">V</span> فيزا</span>
+        <span class="chip"><span class="ico mada">M</span> مدى</span>
+        <span class="chip"><span class="ico apple"></span> Apple Pay</span>
+      </div>
+      <div class="note">* معلومات افتراضية للتجربة – عدّلها حسب المحل.</div>
+    </div>
+
+    <div class="card">
+      <h3>الدفع لاحقًا</h3>
+      <div class="chips">
+        <span class="chip"><span class="ico tabby">T</span> تابي</span>
+        <span class="chip"><span class="ico tamara">Ta</span> تمارا</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>يمكنك الطلب عبر تطبيقات التوصيل</h3>
+      <div class="chips">
+        <span class="chip"><span class="ico keta">K</span> كيتا</span>
+        <span class="chip"><span class="ico hunger">H</span> هنقرستيشن</span>
+        <span class="chip"><span class="ico jahez">J</span> جاهز</span>
+      </div>
+      <div class="note">إذا عندك روابط المتجر داخل كل تطبيق، أضعها لك كروابط مباشرة.</div>
+    </div>
+
   </section>
 
 </body>
